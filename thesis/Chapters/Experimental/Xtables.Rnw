@@ -1,9 +1,11 @@
 \documentclass{article}
 \usepackage[margin=1.5in]{geometry}
-\usepackage{booktabs, xcolor, colortbl, longtable}
+\usepackage[table]{xcolor}
+\usepackage{booktabs, colortbl, longtable}
 \usepackage[pdftitle={Tables With knitr and xtable}, colorlinks=true, linkcolor=blue,
 citecolor=blue, urlcolor=blue, linktocpage=true, breaklinks=true]{hyperref}
 
+\definecolor{lightgray}{gray}{0.9}
 \newcommand{\prog}[1]{\textsf{#1}} %use for program
 \newcommand{\type}[1]{\texttt{#1}} %use for variables in S
 \newcommand{\func}[1]{\texttt{#1()}}
@@ -62,6 +64,13 @@ col <- rep("\\rowcolor[gray]{0.90}", 3)
 print(xtable(WD, caption = "All possible Samples of Size 3 from 3969, 3204, and 2892", digits = 0, align ="|c|c|c|c|c|", label = "BT5"),  type = "latex", include.rownames=FALSE, sanitize.text.function=function(x){x}, add.to.row = list(pos = as.list(rws), command = col), booktabs = TRUE)
 @
 
+<<BT6, results='asis', echo =FALSE>>=
+colnames(WD) <- c("$x^*_1$", "$x^*_2$", "$x^*_3$", "$\\bar{x}^*$")
+rws <- c(0, 13, 26)
+col <- rep("\\rowcolor[gray]{0.90}", 3)
+print(xtable(WD, caption = "All possible Samples of Size 3 from 3969, 3204, and 2892", digits = 0, align ="ccccc", label = "BT6"),  type = "latex", include.rownames=TRUE, sanitize.text.function=function(x){x}, add.to.row = list(pos = as.list(rws), command = col), booktabs = TRUE)
+@
+
 \clearpage
 
 <<ANOVA, warning = FALSE, message = FALSE, echo = FALSE>>=
@@ -109,7 +118,7 @@ print(xtable(SMODAOV, caption = "Digits and Display Fancy Stuff More So and Book
 @
 
 
-\clearpage
+%\clearpage
 
 <<results = "asis", echo = FALSE, message= FALSE, warning = FALSE>>=
 library(PASWR)
@@ -124,7 +133,7 @@ print(xtable(xtabs(~Ease + Treatment, data = EPIDURALf), digits = 0), booktabs =
 print(xtable(xtabs(~Doctor + Ease, data = EPIDURALf), digits = 0), booktabs = TRUE)
 @
 
-\clearpage
+%\clearpage
 
 \begin{table}
 \centering
@@ -188,7 +197,7 @@ Richard & Miles & $2$ \\
 \caption{Looking Good!}
 \end{table}
 
-\clearpage
+%\clearpage
 
 
 
@@ -208,6 +217,8 @@ print(xtable(head(mtcars[, 1:6]), digits = 4), booktabs = TRUE)
 
 
 % \begin{longtable}{p{4cm}p{9cm}} 
+\rowcolors{1}{}{lightgray}
+% \rowcolors{1}{white}{lightgray}
 \begin{longtable}{p{.3\textwidth}p{.7\textwidth}} 
 \caption{\label{NumerComTa}Useful Commands When Working with Numeric
 Vectors}\\  
@@ -255,12 +266,27 @@ incremental value $n$\\
 the mean, the third quartile, and the maximum of $x$\\
 \type{tan(x)} & Returns the tangent for all values in $x$\\
 \type{var(x)} & Computes the sample variance of $x$\\
-\type{which(x == n)} & Give the index of number $n$ in vector $x$
+\type{which(x == n)} & Give the index of number $n$ in vector $x$\\
+\bottomrule
 \end{longtable}
+\rowcolors{1}{}{white}  % reset so next table does not use coloring!
 
 
+\begin{table}
+\centering
+\begin{tabular}{llr} 
+\toprule 
+\multicolumn{2}{c}{Name} \\ 
+\cmidrule(r){1-2} 
+First name & Last Name & Grade \\ 
+\midrule 
+John & Doe & $7.5$ \\ 
+Richard & Miles & $2$ \\ 
+\bottomrule 
+\end{tabular}
+\caption{Looking Good!}
+\end{table}
 
-
-
+\clearpage
 
 \end{document}
