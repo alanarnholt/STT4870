@@ -1,9 +1,12 @@
 \documentclass{article}
 \usepackage[margin=0.75in]{geometry}
-\usepackage{booktabs, xcolor, colortbl}
+\usepackage{booktabs, xcolor, colortbl, longtable}
 \usepackage[pdftitle={Tables With knitr and xtable}, colorlinks=true, linkcolor=blue,
 citecolor=blue, urlcolor=blue, linktocpage=true, breaklinks=true]{hyperref}
 
+\newcommand{\prog}[1]{\textsf{#1}} %use for program
+\newcommand{\type}[1]{\texttt{#1}} %use for variables in S
+\newcommand{\func}[1]{\texttt{#1()}}
 
 \begin{document}
 \title{Put Something Here}
@@ -198,6 +201,72 @@ print(xtable(head(mtcars[, 1:6]), digits = 4), booktabs = FALSE)
 <<results = "asis", echo = FALSE, message= FALSE, warning = FALSE>>=
 print(xtable(head(mtcars[, 1:6]), digits = 4), booktabs = TRUE)
 @
+
+<<results = "asis", echo = FALSE, message= FALSE, warning = FALSE>>=
+print(xtable(head(mtcars[, 1:6]), digits = 4), booktabs = TRUE)
+@
+
+\centering
+\begin{longtable}{p{4cm}p{9cm}} 
+\caption{\label{NumerComTa}Useful Commands When Working with Numeric
+Vectors}\\  %[-2ex]
+% \hline
+\toprule
+Function&Description\\
+% \hline
+\midrule
+\endfirsthead
+\caption{Useful Commands When Working with Numeric Vectors (continued)}\\
+% [-2ex]
+% \hline
+\toprule
+Function&Description\\
+% \hline
+\midrule
+\endhead
+%
+\type{cbind(x,y)} & Joins vectors $x$ and $y$ as columns of vectors\\
+\type{cor(x,y)} & Computes the correlation coefficient\\
+\type{cos(x)} &Returns the cosine for all values in $x$\\
+\type{exp(x)} &Computes $e^x$ for all values in $x$\\
+\type{fivenum(x)} & Computes the smallest value, the lower hinge, the median,
+the upper hinge, and the largest value of a vector $x$ in \prog{R}\\
+\type{floor(x)} & Returns a numeric vector containing the largest integers not
+greater than the corresponding elements of $x$\\
+\type{IQR(x)} & Returns the interquartile range of $x$\\
+\type{length(x)} &The number of values in $x$\\
+\type{log(x)} &Computes the natural logarithm for all values in $x$\\
+\type{log10(x)} &Computes the base 10 logarithm for all values in $x$\\
+\type{mad(x,constant=1)}&Returns the median absolute deviation of $x$\\
+\type{max(x)}&The largest value of $x$ \\
+\type{mean(x)}&Computes the sample mean of $x$\\
+\type{median(x)}&Returns the sample median of $x$\\
+\type{min(x)}&The smallest value of  $x$ \\
+\type{prod(x)}&The product of all the values in $x$\\
+\type{quantile(x)} & Computes the quantiles of a data set stored in a vector $x$\\
+\type{range(x)} & Returns the smallest and largest values in $x$\\
+\type{rbind(x,y)} & Joins vectors $x$ and $y$ as
+rows of vectors\\
+\type{rep(x,n)} & Repeats vector $x$ $n$ times\\
+\type{round(x,n)} & Rounds the number of decimals to $n$ for object $x$\\
+\type{scale(x)} & Computes the $z$-score of $x$\\
+\type{sd(x)} & Computes the sample standard deviation of $x$ in \prog{R}\\
+\type{seq(x,y,n)} & Creates a sequence of numbers  from $x$ to $y$ with incremental value $n$\\
+\type{sin(x)} &Returns the sine for all values in $x$\\
+\type{sqrt(x)} &Computes the square root for all values in $x$\\
+\type{stdev(x)} &  Computes the sample standard deviation of $x$ in \prog{S-PLUS}\\
+\type{sum(x)} &The sum of all the values in  $x$\\
+\type{summary(x)} & Returns the minimum, the first quartile, the median, the
+mean, the third quartile, and the maximum of $x$\\
+\type{tan(x)}& Returns
+the tangent for all values in $x$\\
+\type{var(x)} &Computes the sample variance of $x$\\
+\type{which(x==n)} & Give the index of number $n$ in
+vector $x$
+\end{longtable}
+
+
+
 
 
 
