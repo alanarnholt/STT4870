@@ -111,6 +111,7 @@ To open Git Bash, click on the \texttt{Windows icon -> Git -> Git Bash}.  The pr
 \subsection{Run these commands}
 
 <<label = GITsetup, eval = FALSE, engine = "bash", GIT = TRUE>>=
+
 git config --global user.name "Your Name"
 git config --global user.email "your_email@whatever.com"
 git config --global color.ui true
