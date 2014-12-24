@@ -377,8 +377,6 @@ To check the current status of your repository type \texttt{git status} as shown
 \gref{STATUS}.
 
 <<label = STATUS, engine = "bash", GIT = TRUE>>=
-
-
 git status
 @
 The \texttt{git status} command shows us what files are not staged for a commit.  
