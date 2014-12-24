@@ -40,8 +40,10 @@
 
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
-\usepackage{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage[authoryear,round,longnamesfirst]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
 % [square, numbers, comma, sort&compress]
+
+
 \hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle} % Defines the thesis title - don't touch this
 
@@ -370,7 +372,7 @@ opts_chunk$set(comment = NA, fig.show='hold', fig.height=7, fig.width=7,
 
 \lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
 
-\bibliographystyle{chicago} % Use the "unsrtnat" BibTeX style for formatting the Bibliography ....plainnat....chicago 
+\bibliographystyle{jss} % Use the "unsrtnat" BibTeX style for formatting the Bibliography ....plainnat....chicago.....jss 
 
 \bibliography{./Bibliography/Bibliography,./Bibliography/Rpkgs122414} % The references (bibliography) information are stored in the file named "Bibliography.bib"
 

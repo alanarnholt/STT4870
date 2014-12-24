@@ -1,285 +1,326 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{50}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem[\protect\citeauthoryear{Arnholt}{Arnholt}{2014}]{R-PASWR2}
-Arnholt, A.~T. (2014).
-\newblock {\em PASWR2: Probability and Statistics with R, Second Edition}.
-\newblock R package version 1.0.
+\bibitem[{Arnholt(2014)}]{R-PASWR2}
+Arnholt AT (2014).
+\newblock \emph{PASWR2: Probability and Statistics with R, Second Edition}.
+\newblock R package version 1.0,
+  \urlprefix\url{http://CRAN.R-project.org/package=PASWR2}.
 
-\bibitem[\protect\citeauthoryear{Arnold, Wilson, and Boshier}{Arnold
-  et~al.}{1998}]{Reference3}
-Arnold, A.~S., J.~S. Wilson, and M.~G. Boshier (1998, March).
-\newblock A simple extended-cavity diode laser.
-\newblock {\em Review of Scientific Instruments\/}~{\em 69\/}(3), 1236--1239.
+\bibitem[{Arnold \emph{et~al.}(1998)Arnold, Wilson, and Boshier}]{Reference3}
+Arnold AS, Wilson JS, Boshier MG (1998).
+\newblock \enquote{A Simple Extended-Cavity Diode Laser.}
+\newblock \emph{Review of Scientific Instruments}, \textbf{69}(3), 1236--1239.
+\newblock \urlprefix\url{http://link.aip.org/link/?RSI/69/1236/1}.
 
-\bibitem[\protect\citeauthoryear{Auguie}{Auguie}{2012}]{R-gridExtra}
-Auguie, B. (2012).
-\newblock {\em gridExtra: functions in Grid graphics}.
-\newblock R package version 0.9.1.
+\bibitem[{Auguie(2012)}]{R-gridExtra}
+Auguie B (2012).
+\newblock \emph{gridExtra: functions in Grid graphics}.
+\newblock R package version 0.9.1,
+  \urlprefix\url{http://CRAN.R-project.org/package=gridExtra}.
 
-\bibitem[\protect\citeauthoryear{Boettiger}{Boettiger}{2014}]{R-knitcitations}
-Boettiger, C. (2014).
-\newblock {\em knitcitations: Citations for knitr markdown files}.
-\newblock R package version 1.0.5.
+\bibitem[{Boettiger(2014)}]{R-knitcitations}
+Boettiger C (2014).
+\newblock \emph{knitcitations: Citations for knitr markdown files}.
+\newblock R package version 1.0.5,
+  \urlprefix\url{http://CRAN.R-project.org/package=knitcitations}.
 
-\bibitem[\protect\citeauthoryear{Canty and Ripley}{Canty and
-  Ripley}{2014}]{R-boot}
-Canty, A. and B.~Ripley (2014).
-\newblock {\em boot: Bootstrap Functions (originally by Angelo Canty for S)}.
-\newblock R package version 1.3-13.
+\bibitem[{Canty and Ripley(2014)}]{R-boot}
+Canty A, Ripley B (2014).
+\newblock \emph{boot: Bootstrap Functions (originally by Angelo Canty for S)}.
+\newblock R package version 1.3-13,
+  \urlprefix\url{http://CRAN.R-project.org/package=boot}.
 
-\bibitem[\protect\citeauthoryear{Dahl}{Dahl}{2014}]{R-xtable}
-Dahl, D.~B. (2014).
-\newblock {\em xtable: Export tables to LaTeX or HTML}.
-\newblock R package version 1.7-4.
+\bibitem[{Dahl(2014)}]{R-xtable}
+Dahl DB (2014).
+\newblock \emph{xtable: Export tables to LaTeX or HTML}.
+\newblock R package version 1.7-4,
+  \urlprefix\url{http://CRAN.R-project.org/package=xtable}.
 
-\bibitem[\protect\citeauthoryear{Dragulescu}{Dragulescu}{2014a}]{R-xlsx}
-Dragulescu, A.~A. (2014a).
-\newblock {\em xlsx: Read, write, format Excel 2007 and Excel 97/2000/XP/2003
+\bibitem[{Dragulescu(2014{\natexlab{a}})}]{R-xlsx}
+Dragulescu AA (2014{\natexlab{a}}).
+\newblock \emph{xlsx: Read, write, format Excel 2007 and Excel 97/2000/XP/2003
   files}.
-\newblock R package version 0.5.7.
+\newblock R package version 0.5.7,
+  \urlprefix\url{http://CRAN.R-project.org/package=xlsx}.
 
-\bibitem[\protect\citeauthoryear{Dragulescu}{Dragulescu}{2014b}]{R-xlsxjars}
-Dragulescu, A.~A. (2014b).
-\newblock {\em xlsxjars: Package required POI jars for the xlsx package}.
-\newblock R package version 0.6.1.
+\bibitem[{Dragulescu(2014{\natexlab{b}})}]{R-xlsxjars}
+Dragulescu AA (2014{\natexlab{b}}).
+\newblock \emph{xlsxjars: Package required POI jars for the xlsx package}.
+\newblock R package version 0.6.1,
+  \urlprefix\url{http://CRAN.R-project.org/package=xlsxjars}.
 
-\bibitem[\protect\citeauthoryear{Faraway}{Faraway}{2014}]{R-faraway}
-Faraway, J. (2014).
-\newblock {\em faraway: Functions and datasets for books by Julian Faraway.}
-\newblock R package version 1.0.6.
+\bibitem[{Faraway(2014)}]{R-faraway}
+Faraway J (2014).
+\newblock \emph{faraway: Functions and datasets for books by Julian Faraway.}
+\newblock R package version 1.0.6,
+  \urlprefix\url{http://CRAN.R-project.org/package=faraway}.
 
-\bibitem[\protect\citeauthoryear{Francois}{Francois}{2013}]{R-bibtex}
-Francois, R. (2013).
-\newblock {\em bibtex: bibtex parser}.
-\newblock R package version 0.3-6.
+\bibitem[{Francois(2013)}]{R-bibtex}
+Francois R (2013).
+\newblock \emph{bibtex: bibtex parser}.
+\newblock R package version 0.3-6,
+  \urlprefix\url{http://CRAN.R-project.org/package=bibtex}.
 
-\bibitem[\protect\citeauthoryear{Friendly}{Friendly}{2014}]{R-vcdExtra}
-Friendly, M. (2014).
-\newblock {\em vcdExtra: vcd extensions and additions}.
-\newblock R package version 0.6-3.
+\bibitem[{Friendly(2014)}]{R-vcdExtra}
+Friendly M (2014).
+\newblock \emph{vcdExtra: vcd extensions and additions}.
+\newblock R package version 0.6-3,
+  \urlprefix\url{http://CRAN.R-project.org/package=vcdExtra}.
 
-\bibitem[\protect\citeauthoryear{Gandrud}{Gandrud}{2013}]{gandrud2013reproducible}
-Gandrud, C. (2013).
-\newblock {\em Reproducible Research with R and RStudio}.
+\bibitem[{Gandrud(2013)}]{gandrud2013reproducible}
+Gandrud C (2013).
+\newblock \emph{Reproducible Research with R and RStudio}.
 \newblock CRC Press.
 
-\bibitem[\protect\citeauthoryear{Gandrud}{Gandrud}{2014}]{R-repmis}
-Gandrud, C. (2014).
-\newblock {\em repmis: A collection of miscellaneous tools for reproducible
+\bibitem[{Gandrud(2014)}]{R-repmis}
+Gandrud C (2014).
+\newblock \emph{repmis: A collection of miscellaneous tools for reproducible
   research with R.}
-\newblock R package version 0.3.3.
+\newblock R package version 0.3.3,
+  \urlprefix\url{http://CRAN.R-project.org/package=repmis}.
 
-\bibitem[\protect\citeauthoryear{Genz, Bretz, Miwa, Mi, and Hothorn}{Genz
-  et~al.}{2014}]{R-mvtnorm}
-Genz, A., F.~Bretz, T.~Miwa, X.~Mi, and T.~Hothorn (2014).
-\newblock {\em mvtnorm: Multivariate Normal and t Distributions}.
-\newblock R package version 1.0-2.
+\bibitem[{Genz \emph{et~al.}(2014)Genz, Bretz, Miwa, Mi, and
+  Hothorn}]{R-mvtnorm}
+Genz A, Bretz F, Miwa T, Mi X, Hothorn T (2014).
+\newblock \emph{mvtnorm: Multivariate Normal and t Distributions}.
+\newblock R package version 1.0-2,
+  \urlprefix\url{http://CRAN.R-project.org/package=mvtnorm}.
 
-\bibitem[\protect\citeauthoryear{Gr{\"a}tzer and Sch{\"o}pf}{Gr{\"a}tzer and
-  Sch{\"o}pf}{2007}]{gratzer2007more}
-Gr{\"a}tzer, G. and R.~Sch{\"o}pf (2007).
-\newblock {\em More math into latex}, Volume~4.
+\bibitem[{Gr{\"a}tzer and Sch{\"o}pf(2007)}]{gratzer2007more}
+Gr{\"a}tzer G, Sch{\"o}pf R (2007).
+\newblock \emph{More math into latex}, volume~4.
 \newblock Springer.
 
-\bibitem[\protect\citeauthoryear{Graves, Piepho, and with help~from Sundar
-  Dorai-Raj}{Graves et~al.}{2012}]{R-multcompView}
-Graves, S., H.-P. Piepho, and L.~S. with help~from Sundar Dorai-Raj (2012).
-\newblock {\em multcompView: Visualizations of Paired Comparisons}.
-\newblock R package version 0.1-5.
+\bibitem[{Graves \emph{et~al.}(2012)Graves, Piepho, and with help~from Sundar
+  Dorai-Raj}]{R-multcompView}
+Graves S, Piepho HP, with help~from Sundar Dorai-Raj LS (2012).
+\newblock \emph{multcompView: Visualizations of Paired Comparisons}.
+\newblock R package version 0.1-5,
+  \urlprefix\url{http://CRAN.R-project.org/package=multcompView}.
 
-\bibitem[\protect\citeauthoryear{Gross and bug fixes~by Uwe~Ligges}{Gross and
-  bug fixes~by Uwe~Ligges}{2012}]{R-nortest}
-Gross, J. and bug fixes~by Uwe~Ligges (2012).
-\newblock {\em nortest: Tests for Normality}.
-\newblock R package version 1.0-2.
+\bibitem[{Gross and bug fixes~by Uwe~Ligges(2012)}]{R-nortest}
+Gross J, bug fixes~by Uwe~Ligges (2012).
+\newblock \emph{nortest: Tests for Normality}.
+\newblock R package version 1.0-2,
+  \urlprefix\url{http://CRAN.R-project.org/package=nortest}.
 
-\bibitem[\protect\citeauthoryear{Harrell}{Harrell}{2014}]{R-Hmisc}
-Harrell, Jr., F.~E. (2014).
-\newblock {\em Hmisc: Harrell Miscellaneous}.
-\newblock R package version 3.14-6.
+\bibitem[{Harrell(2014)}]{R-Hmisc}
+Harrell Jr FE (2014).
+\newblock \emph{Hmisc: Harrell Miscellaneous}.
+\newblock R package version 3.14-6,
+  \urlprefix\url{http://CRAN.R-project.org/package=Hmisc}.
 
-\bibitem[\protect\citeauthoryear{Hawthorn, Weber, and Scholten}{Hawthorn
-  et~al.}{2001}]{Reference1}
-Hawthorn, C.~J., K.~P. Weber, and R.~E. Scholten (2001, December).
-\newblock Littrow configuration tunable external cavity diode laser with fixed
-  direction output beam.
-\newblock {\em Review of Scientific Instruments\/}~{\em 72\/}(12), 4477--4479.
+\bibitem[{Hawthorn \emph{et~al.}(2001)Hawthorn, Weber, and
+  Scholten}]{Reference1}
+Hawthorn CJ, Weber KP, Scholten RE (2001).
+\newblock \enquote{Littrow Configuration Tunable External Cavity Diode Laser
+  with Fixed Direction Output Beam.}
+\newblock \emph{Review of Scientific Instruments}, \textbf{72}(12), 4477--4479.
+\newblock \urlprefix\url{http://link.aip.org/link/?RSI/72/4477/1}.
 
-\bibitem[\protect\citeauthoryear{Hothorn, Bretz, and Westfall}{Hothorn
-  et~al.}{2014}]{R-multcomp}
-Hothorn, T., F.~Bretz, and P.~Westfall (2014).
-\newblock {\em multcomp: Simultaneous Inference in General Parametric Models}.
-\newblock R package version 1.3-8.
+\bibitem[{Hothorn \emph{et~al.}(2014{\natexlab{a}})Hothorn, Bretz, and
+  Westfall}]{R-multcomp}
+Hothorn T, Bretz F, Westfall P (2014{\natexlab{a}}).
+\newblock \emph{multcomp: Simultaneous Inference in General Parametric Models}.
+\newblock R package version 1.3-8,
+  \urlprefix\url{http://CRAN.R-project.org/package=multcomp}.
 
-\bibitem[\protect\citeauthoryear{Hothorn, Hornik, {van de Wiel}, and
-  Zeileis}{Hothorn et~al.}{2014}]{R-coin}
-Hothorn, T., K.~Hornik, M.~A. {van de Wiel}, and A.~Zeileis (2014).
-\newblock {\em coin: Conditional Inference Procedures in a Permutation Test
+\bibitem[{Hothorn \emph{et~al.}(2014{\natexlab{b}})Hothorn, Hornik, {van de
+  Wiel}, and Zeileis}]{R-coin}
+Hothorn T, Hornik K, {van de Wiel} MA, Zeileis A (2014{\natexlab{b}}).
+\newblock \emph{coin: Conditional Inference Procedures in a Permutation Test
   Framework}.
-\newblock R package version 1.0-24.
+\newblock R package version 1.0-24,
+  \urlprefix\url{http://CRAN.R-project.org/package=coin}.
 
-\bibitem[\protect\citeauthoryear{Lumley}{Lumley}{2009}]{R-leaps}
-Lumley, T. (2009).
-\newblock {\em leaps: regression subset selection}.
-\newblock R package version 2.9.
+\bibitem[{Lumley(2009)}]{R-leaps}
+Lumley T (2009).
+\newblock \emph{leaps: regression subset selection}.
+\newblock R package version 2.9,
+  \urlprefix\url{http://CRAN.R-project.org/package=leaps}.
 
-\bibitem[\protect\citeauthoryear{Meyer, Dimitriadou, Hornik, Weingessel, and
-  Leisch}{Meyer et~al.}{2014}]{R-e1071}
-Meyer, D., E.~Dimitriadou, K.~Hornik, A.~Weingessel, and F.~Leisch (2014).
-\newblock {\em e1071: Misc Functions of the Department of Statistics (e1071),
+\bibitem[{Meyer \emph{et~al.}(2014{\natexlab{a}})Meyer, Dimitriadou, Hornik,
+  Weingessel, and Leisch}]{R-e1071}
+Meyer D, Dimitriadou E, Hornik K, Weingessel A, Leisch F (2014{\natexlab{a}}).
+\newblock \emph{e1071: Misc Functions of the Department of Statistics (e1071),
   TU Wien}.
-\newblock R package version 1.6-4.
+\newblock R package version 1.6-4,
+  \urlprefix\url{http://CRAN.R-project.org/package=e1071}.
 
-\bibitem[\protect\citeauthoryear{Meyer, Zeileis, and Hornik}{Meyer
-  et~al.}{2014}]{R-vcd}
-Meyer, D., A.~Zeileis, and K.~Hornik (2014).
-\newblock {\em vcd: Visualizing Categorical Data}.
-\newblock R package version 1.3-2.
+\bibitem[{Meyer \emph{et~al.}(2014{\natexlab{b}})Meyer, Zeileis, and
+  Hornik}]{R-vcd}
+Meyer D, Zeileis A, Hornik K (2014{\natexlab{b}}).
+\newblock \emph{vcd: Visualizing Categorical Data}.
+\newblock R package version 1.3-2,
+  \urlprefix\url{http://CRAN.R-project.org/package=vcd}.
 
-\bibitem[\protect\citeauthoryear{Pinheiro, Bates, and {R-core}}{Pinheiro
-  et~al.}{2014}]{R-nlme}
-Pinheiro, J., D.~Bates, and {R-core} (2014).
-\newblock {\em nlme: Linear and Nonlinear Mixed Effects Models}.
-\newblock R package version 3.1-118.
+\bibitem[{Pinheiro \emph{et~al.}(2014)Pinheiro, Bates, and {R-core}}]{R-nlme}
+Pinheiro J, Bates D, {R-core} (2014).
+\newblock \emph{nlme: Linear and Nonlinear Mixed Effects Models}.
+\newblock R package version 3.1-118,
+  \urlprefix\url{http://CRAN.R-project.org/package=nlme}.
 
-\bibitem[\protect\citeauthoryear{Qiu and Xie}{Qiu and Xie}{2014}]{R-highr}
-Qiu, Y. and Y.~Xie (2014).
-\newblock {\em highr: Syntax highlighting for R}.
-\newblock R package version 0.4.
+\bibitem[{Qiu and Xie(2014)}]{R-highr}
+Qiu Y, Xie Y (2014).
+\newblock \emph{highr: Syntax highlighting for R}.
+\newblock R package version 0.4,
+  \urlprefix\url{http://CRAN.R-project.org/package=highr}.
 
-\bibitem[\protect\citeauthoryear{{R Core Team}}{{R Core
-  Team}}{2014a}]{R-foreign}
-{R Core Team} (2014a).
-\newblock {\em foreign: Read Data Stored by Minitab, S, SAS, SPSS, Stata,
+\bibitem[{{R Core Team}(2014{\natexlab{a}})}]{R-foreign}
+{R Core Team} (2014{\natexlab{a}}).
+\newblock \emph{foreign: Read Data Stored by Minitab, S, SAS, SPSS, Stata,
   Systat, Weka, dBase, ...}
-\newblock R package version 0.8-61.
+\newblock R package version 0.8-61,
+  \urlprefix\url{http://CRAN.R-project.org/package=foreign}.
 
-\bibitem[\protect\citeauthoryear{{R Core Team}}{{R Core Team}}{2014b}]{R-base}
-{R Core Team} (2014b).
-\newblock {\em R: A Language and Environment for Statistical Computing}.
-\newblock Vienna, Austria: R Foundation for Statistical Computing.
+\bibitem[{{R Core Team}(2014{\natexlab{b}})}]{R-base}
+{R Core Team} (2014{\natexlab{b}}).
+\newblock \emph{R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+\newblock \urlprefix\url{http://www.R-project.org/}.
 
-\bibitem[\protect\citeauthoryear{Rinker}{Rinker}{2014}]{R-reports}
-Rinker, T. (2014).
-\newblock {\em reports: Assist the Workflow of Writing Academic Articles and
+\bibitem[{Rinker(2014)}]{R-reports}
+Rinker T (2014).
+\newblock \emph{reports: Assist the Workflow of Writing Academic Articles and
   Other Reports}.
-\newblock R package version 0.1.4.
+\newblock R package version 0.1.4,
+  \urlprefix\url{http://CRAN.R-project.org/package=reports}.
 
-\bibitem[\protect\citeauthoryear{Ripley}{Ripley}{2014}]{R-MASS}
-Ripley, B. (2014).
-\newblock {\em MASS: Support Functions and Datasets for Venables and Ripley's
+\bibitem[{Ripley(2014)}]{R-MASS}
+Ripley B (2014).
+\newblock \emph{MASS: Support Functions and Datasets for Venables and Ripley's
   MASS}.
-\newblock R package version 7.3-35.
+\newblock R package version 7.3-35,
+  \urlprefix\url{http://CRAN.R-project.org/package=MASS}.
 
-\bibitem[\protect\citeauthoryear{{RStudio}}{{RStudio}}{2012}]{R-rstudio}
+\bibitem[{{RStudio}(2012)}]{R-rstudio}
 {RStudio} (2012).
-\newblock {\em rstudio: Tools and Utilities for RStudio}.
+\newblock \emph{rstudio: Tools and Utilities for RStudio}.
 \newblock R package version 0.98.1091.
 
-\bibitem[\protect\citeauthoryear{{RStudio,}{ Inc.}}{{RStudio,}{
-  Inc.}}{2014}]{R-shiny}
-{RStudio,}{ Inc.} (2014).
-\newblock {\em shiny: Web Application Framework for R}.
-\newblock R package version 0.10.2.2.
+\bibitem[{{RStudio,}{ Inc.}(2014)}]{R-shiny}
+{RStudio,}{ Inc} (2014).
+\newblock \emph{shiny: Web Application Framework for R}.
+\newblock R package version 0.10.2.2,
+  \urlprefix\url{http://CRAN.R-project.org/package=shiny}.
 
-\bibitem[\protect\citeauthoryear{Sarkar}{Sarkar}{2014}]{R-lattice}
-Sarkar, D. (2014).
-\newblock {\em lattice: Lattice Graphics}.
-\newblock R package version 0.20-29.
+\bibitem[{Sarkar(2014)}]{R-lattice}
+Sarkar D (2014).
+\newblock \emph{lattice: Lattice Graphics}.
+\newblock R package version 0.20-29,
+  \urlprefix\url{http://CRAN.R-project.org/package=lattice}.
 
-\bibitem[\protect\citeauthoryear{Sarkar and Andrews}{Sarkar and
-  Andrews}{2013}]{R-latticeExtra}
-Sarkar, D. and F.~Andrews (2013).
-\newblock {\em latticeExtra: Extra Graphical Utilities Based on Lattice}.
-\newblock R package version 0.6-26.
+\bibitem[{Sarkar and Andrews(2013)}]{R-latticeExtra}
+Sarkar D, Andrews F (2013).
+\newblock \emph{latticeExtra: Extra Graphical Utilities Based on Lattice}.
+\newblock R package version 0.6-26,
+  \urlprefix\url{http://CRAN.R-project.org/package=latticeExtra}.
 
-\bibitem[\protect\citeauthoryear{Sharpsteen and Bracken}{Sharpsteen and
-  Bracken}{2013}]{R-tikzDevice}
-Sharpsteen, C. and C.~Bracken (2013).
-\newblock {\em tikzDevice: R Graphics Output in LaTeX Format}.
-\newblock R package version 0.7.0.
+\bibitem[{Sharpsteen and Bracken(2013)}]{R-tikzDevice}
+Sharpsteen C, Bracken C (2013).
+\newblock \emph{tikzDevice: R Graphics Output in LaTeX Format}.
+\newblock R package version 0.7.0,
+  \urlprefix\url{http://CRAN.R-project.org/package=tikzDevice}.
 
-\bibitem[\protect\citeauthoryear{Spector}{Spector}{2008}]{spector2008data}
-Spector, P. (2008).
-\newblock {\em Data manipulation with R}.
+\bibitem[{Spector(2008)}]{spector2008data}
+Spector P (2008).
+\newblock \emph{Data manipulation with R}.
 \newblock Springer.
 
-\bibitem[\protect\citeauthoryear{Technology and {LLC.}}{Technology and
-  {LLC.}}{2013}]{R-shinyAce}
-Technology, T. and {LLC.} (2013).
-\newblock {\em shinyAce: Ace editor bindings for Shiny}.
-\newblock R package version 0.1.0.
+\bibitem[{Technology and {LLC.}(2013)}]{R-shinyAce}
+Technology T, {LLC} (2013).
+\newblock \emph{shinyAce: Ace editor bindings for Shiny}.
+\newblock R package version 0.1.0,
+  \urlprefix\url{http://CRAN.R-project.org/package=shinyAce}.
 
-\bibitem[\protect\citeauthoryear{{Temple Lang}}{{Temple Lang}}{2014}]{R-RCurl}
-{Temple Lang}, D. (2014).
-\newblock {\em RCurl: General network (HTTP/FTP/...) client interface for R}.
-\newblock R package version 1.95-4.5.
+\bibitem[{{Temple Lang}(2014)}]{R-RCurl}
+{Temple Lang} D (2014).
+\newblock \emph{RCurl: General network (HTTP/FTP/...) client interface for R}.
+\newblock R package version 1.95-4.5,
+  \urlprefix\url{http://CRAN.R-project.org/package=RCurl}.
 
-\bibitem[\protect\citeauthoryear{Wand}{Wand}{2014}]{R-KernSmooth}
-Wand, M. (2014).
-\newblock {\em KernSmooth: Functions for kernel smoothing for Wand \& Jones
+\bibitem[{Wand(2014)}]{R-KernSmooth}
+Wand M (2014).
+\newblock \emph{KernSmooth: Functions for kernel smoothing for Wand \& Jones
   (1995)}.
-\newblock R package version 2.23-13.
+\newblock R package version 2.23-13,
+  \urlprefix\url{http://CRAN.R-project.org/package=KernSmooth}.
 
-\bibitem[\protect\citeauthoryear{Wickham}{Wickham}{2012}]{R-gtable}
-Wickham, H. (2012).
-\newblock {\em gtable: Arrange grobs in tables.}
-\newblock R package version 0.1.2.
+\bibitem[{Wickham(2012)}]{R-gtable}
+Wickham H (2012).
+\newblock \emph{gtable: Arrange grobs in tables.}
+\newblock R package version 0.1.2,
+  \urlprefix\url{http://CRAN.R-project.org/package=gtable}.
 
-\bibitem[\protect\citeauthoryear{Wickham}{Wickham}{2014a}]{R-httr}
-Wickham, H. (2014a).
-\newblock {\em httr: Tools for Working with URLs and HTTP}.
-\newblock R package version 0.6.0.
+\bibitem[{Wickham(2014{\natexlab{a}})}]{R-httr}
+Wickham H (2014{\natexlab{a}}).
+\newblock \emph{httr: Tools for Working with URLs and HTTP}.
+\newblock R package version 0.6.0,
+  \urlprefix\url{http://CRAN.R-project.org/package=httr}.
 
-\bibitem[\protect\citeauthoryear{Wickham}{Wickham}{2014b}]{R-plyr}
-Wickham, H. (2014b).
-\newblock {\em plyr: Tools for splitting, applying and combining data}.
-\newblock R package version 1.8.1.
+\bibitem[{Wickham(2014{\natexlab{b}})}]{R-plyr}
+Wickham H (2014{\natexlab{b}}).
+\newblock \emph{plyr: Tools for splitting, applying and combining data}.
+\newblock R package version 1.8.1,
+  \urlprefix\url{http://CRAN.R-project.org/package=plyr}.
 
-\bibitem[\protect\citeauthoryear{Wickham}{Wickham}{2014c}]{R-reshape2}
-Wickham, H. (2014c).
-\newblock {\em reshape2: Flexibly Reshape Data: A Reboot of the Reshape
+\bibitem[{Wickham(2014{\natexlab{c}})}]{R-reshape2}
+Wickham H (2014{\natexlab{c}}).
+\newblock \emph{reshape2: Flexibly Reshape Data: A Reboot of the Reshape
   Package.}
-\newblock R package version 1.4.1.
+\newblock R package version 1.4.1,
+  \urlprefix\url{http://CRAN.R-project.org/package=reshape2}.
 
-\bibitem[\protect\citeauthoryear{Wickham and Chang}{Wickham and
-  Chang}{2014a}]{R-devtools}
-Wickham, H. and W.~Chang (2014a).
-\newblock {\em devtools: Tools to make developing R code easier}.
-\newblock R package version 1.6.1.
+\bibitem[{Wickham and Chang(2014{\natexlab{a}})}]{R-devtools}
+Wickham H, Chang W (2014{\natexlab{a}}).
+\newblock \emph{devtools: Tools to make developing R code easier}.
+\newblock R package version 1.6.1,
+  \urlprefix\url{http://CRAN.R-project.org/package=devtools}.
 
-\bibitem[\protect\citeauthoryear{Wickham and Chang}{Wickham and
-  Chang}{2014b}]{R-ggplot2}
-Wickham, H. and W.~Chang (2014b).
-\newblock {\em ggplot2: An implementation of the Grammar of Graphics}.
-\newblock R package version 1.0.0.
+\bibitem[{Wickham and Chang(2014{\natexlab{b}})}]{R-ggplot2}
+Wickham H, Chang W (2014{\natexlab{b}}).
+\newblock \emph{ggplot2: An implementation of the Grammar of Graphics}.
+\newblock R package version 1.0.0,
+  \urlprefix\url{http://CRAN.R-project.org/package=ggplot2}.
 
-\bibitem[\protect\citeauthoryear{Wickham, Danenberg, and Eugster}{Wickham
-  et~al.}{2014}]{R-roxygen2}
-Wickham, H., P.~Danenberg, and M.~Eugster (2014).
-\newblock {\em roxygen2: In-source Documentation for R}.
-\newblock R package version 4.1.0.
+\bibitem[{Wickham \emph{et~al.}(2014)Wickham, Danenberg, and
+  Eugster}]{R-roxygen2}
+Wickham H, Danenberg P, Eugster M (2014).
+\newblock \emph{roxygen2: In-source Documentation for R}.
+\newblock R package version 4.1.0,
+  \urlprefix\url{http://CRAN.R-project.org/package=roxygen2}.
 
-\bibitem[\protect\citeauthoryear{Wieman and Hollberg}{Wieman and
-  Hollberg}{1991}]{Reference2}
-Wieman, C.~E. and L.~Hollberg (1991, January).
-\newblock Using diode lasers for atomic physics.
-\newblock {\em Review of Scientific Instruments\/}~{\em 62\/}(1), 1--20.
+\bibitem[{Wieman and Hollberg(1991)}]{Reference2}
+Wieman CE, Hollberg L (1991).
+\newblock \enquote{Using Diode Lasers for Atomic Physics.}
+\newblock \emph{Review of Scientific Instruments}, \textbf{62}(1), 1--20.
+\newblock \urlprefix\url{http://link.aip.org/link/?RSI/62/1/1}.
 
-\bibitem[\protect\citeauthoryear{Xie}{Xie}{2013}]{xie2013dynamic}
-Xie, Y. (2013).
-\newblock {\em Dynamic Documents with R and knitr}.
+\bibitem[{Xie(2013)}]{xie2013dynamic}
+Xie Y (2013).
+\newblock \emph{Dynamic Documents with R and knitr}.
 \newblock CRC Press.
 
-\bibitem[\protect\citeauthoryear{Xie}{Xie}{2014a}]{R-formatR}
-Xie, Y. (2014a).
-\newblock {\em formatR: Format R Code Automatically}.
-\newblock R package version 1.0.
+\bibitem[{Xie(2014{\natexlab{a}})}]{R-formatR}
+Xie Y (2014{\natexlab{a}}).
+\newblock \emph{formatR: Format R Code Automatically}.
+\newblock R package version 1.0,
+  \urlprefix\url{http://CRAN.R-project.org/package=formatR}.
 
-\bibitem[\protect\citeauthoryear{Xie}{Xie}{2014b}]{R-knitr}
-Xie, Y. (2014b).
-\newblock {\em knitr: A General-Purpose Package for Dynamic Report Generation
+\bibitem[{Xie(2014{\natexlab{b}})}]{R-knitr}
+Xie Y (2014{\natexlab{b}}).
+\newblock \emph{knitr: A General-Purpose Package for Dynamic Report Generation
   in R}.
-\newblock R package version 1.8.
+\newblock R package version 1.8,
+  \urlprefix\url{http://CRAN.R-project.org/package=knitr}.
 
 \end{thebibliography}
