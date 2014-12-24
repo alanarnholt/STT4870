@@ -55,7 +55,7 @@ PATH environment, click in the circle to the left of
 following at the \texttt{R} prompt to make sure \texttt{R} knows where to find \texttt{bash.}  Note that the 
 path below will be dependent on the operating system you are using.
 
-<<label= BashCheck, engine="R", cache = TRUE>>=
+<<label= BashCheck, engine="R", cache = FALSE>>=
 Sys.which("bash")
 @
 
