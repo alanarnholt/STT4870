@@ -77,4 +77,4 @@ pvalue <- pchisq(X2, 9, lower = FALSE)
 pvalue
 @
 
-Inline \texttt{R} expressions are created with \verb{\Sexpr{some r code here}}.  For example, the \textit{p}-value from \texttt{R} Code \vref{SomeCode} is \Sexpr{pvalue}.
+Inline \texttt{R} expressions are created with \verb|\Sexpr{some r code here}|.  For example, the \textit{p}-value from \texttt{R} Code \vref{SomeCode} is \Sexpr{pvalue}.
