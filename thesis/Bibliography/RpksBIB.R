@@ -1,7 +1,7 @@
 # Creating R packages Bib file
-# 03/19/14
+# 03/19/14...updated 12/24/14
 
-RpackagesUsed <- c('knitcitations', 'knitr', 'roxygen2', 'PASWR', 
+RpackagesUsed <- c('knitcitations', 'knitr', 'roxygen2', 'PASWR2', 
                    'tikzDevice', 'ggplot2', 'bibtex', 'boot', 'formatR', 'gridExtra',
                    'coin', 'devtools', 'e1071', 'faraway', 'foreign', 'formatR',  
                    'Hmisc', 'latticeExtra','lattice', 'leaps', 'MASS', 'multcomp', 
@@ -10,4 +10,4 @@ RpackagesUsed <- c('knitcitations', 'knitr', 'roxygen2', 'PASWR',
                    'vcd', 'grid', 'httr', 'KernSmooth', 'mvtnorm', 'nlme', 'reshape2',
                    'roxygen2', 'rstudio', 'shiny', 'shinyAce', 'vcdExtra', 'xlsxjars')
 library(knitr)
-write_bib(RpackagesUsed, file = './thesis/Bibliography/Rpkgs031914.bib')
+write_bib(RpackagesUsed, file = './thesis/Bibliography/Rpkgs122414.bib')
