@@ -84,9 +84,12 @@ knit_hooks$set(rcode = function(before, options, envir){
   } else "\\end{rcode}"
 })
 @
+
 <<GIThook, echo = FALSE>>=
-knit_hooks$set(GIT = function(before, options, envir) {
-  if (before) sprintf('\\begin{GIT}\\label{%s}\\hfill{}', options$label) else '\\end{GIT}'
+knit_hooks$set(GIT = function(before, options, envir){
+  if (before){
+    sprintf("\\begin{GIT}\\label{%s}\\hfill{}", options$label) 
+  } else "\\end{GIT}"
 })
 @
 
