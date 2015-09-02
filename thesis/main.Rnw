@@ -40,7 +40,10 @@
 
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
-\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage[authoryear,round,longnamesfirst]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+% [square, numbers, comma, sort&compress]
+
+
 \hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle} % Defines the thesis title - don't touch this
 
@@ -81,9 +84,12 @@ knit_hooks$set(rcode = function(before, options, envir){
   } else "\\end{rcode}"
 })
 @
+
 <<GIThook, echo = FALSE>>=
-knit_hooks$set(GIT = function(before, options, envir) {
-  if (before) sprintf('\\begin{GIT}\\label{%s}\\hfill{}', options$label) else '\\end{GIT}'
+knit_hooks$set(GIT = function(before, options, envir){
+  if (before){
+    sprintf("\\begin{GIT}\\label{%s}\\hfill{}", options$label) 
+  } else "\\end{GIT}"
 })
 @
 
@@ -310,7 +316,7 @@ $\omega$ & angular frequency & rads$^{-1}$ \\
 <<MAINsetup, echo = FALSE, results= 'hide', message = FALSE, warning = FALSE>>=
 options(width = 70)
 opts_chunk$set(comment = NA, fig.show='hold', fig.height=7, fig.width=7, 
-               highlight = TRUE, tidy = TRUE, tidy.opts=list(keep.blank.line=FALSE, width.cutoff= 55))
+               highlight = TRUE, tidy = TRUE, strip.white = TRUE, tidy.opts=list(blank = FALSE, width.cutoff= 55))
 @
 
 
@@ -369,8 +375,8 @@ opts_chunk$set(comment = NA, fig.show='hold', fig.height=7, fig.width=7,
 
 \lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
 
-\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography ....plainnat
+\bibliographystyle{jss} % Use the "unsrtnat" BibTeX style for formatting the Bibliography ....plainnat....chicago.....jss 
 
-\bibliography{./Bibliography/Bibliography,./Bibliography/Rpkgs031914} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+\bibliography{./Bibliography/Bibliography,./Bibliography/Rpkgs122414} % The references (bibliography) information are stored in the file named "Bibliography.bib"
 
 \end{document}  

@@ -74,7 +74,6 @@ git config --global user.email "Joe@appstate.edu"
 ```
 
 
-
 My Git Configurations
 ========================================================
 
@@ -102,7 +101,6 @@ branch.master.remote=origin
 branch.master.merge=refs/heads/master
 ```
 
-
 Clone a repo to your local machine
 =======================================================
 incremental: true
@@ -112,7 +110,6 @@ incremental: true
 ```bash
 git clone https://github.com/alanarnholt/STT4870.git
 ```
-
 * GUI RStudio  `File -> New Project ... -> Version Control -> Git`
 
 ![VersionControl](./images/ProjectVersionControl.png)
@@ -129,7 +126,6 @@ git remote -v
 origin	https://github.com/alanarnholt/STT4870.git (fetch)
 origin	https://github.com/alanarnholt/STT4870.git (push)
 ```
-
 
 Thesis
 =======================================================

@@ -55,7 +55,7 @@ PATH environment, click in the circle to the left of
 following at the \texttt{R} prompt to make sure \texttt{R} knows where to find \texttt{bash.}  Note that the 
 path below will be dependent on the operating system you are using.
 
-<<label= BashCheck, engine="R", cache = TRUE>>=
+<<label= BashCheck, engine="R", cache = FALSE>>=
 Sys.which("bash")
 @
 
@@ -111,6 +111,8 @@ To open Git Bash, click on the \texttt{Windows icon -> Git -> Git Bash}.  The pr
 \subsection{Run these commands}
 
 <<label = GITsetup, eval = FALSE, engine = "bash", GIT = TRUE>>=
+
+
 git config --global user.name "Your Name"
 git config --global user.email "your_email@whatever.com"
 git config --global color.ui true
@@ -120,7 +122,9 @@ If you do not want to type your username and password every time you work with a
 
 To confirm your username and email, type \verb|git config --list| at the \verb|$| prompt.
 
-<<verify, engine = "sh", GIT = TRUE>>=
+<<verify, engine = "bash", GIT = TRUE>>=
+
+
 git config --list  # shows your configuration
 @
 
@@ -237,6 +241,8 @@ to your machine, you will not need to initialize your directory.
 Another common way to clone a repo is by first ``forking'' someone else's repo.   Forking a repo creates a remote (GitHub) copy of the forked repo.   To work on the forked repo, you first must clone the remote fork to your local  machine.  When a repository is cloned, it has a default remote called \texttt{origin} that points to your fork on GitHub, not the original repository from which it was forked.  This means that updates the orignal repo owner makes will not automatically be added to your forked repo.  To verify that your remote (\texttt{origin}) of a forked repo is set-up properly, type
 
 <<RepoCheck, engine = "bash", eval = FALSE, GIT = TRUE>>=
+ 
+
 git remote -v
 origin  https://github.com/Your-User-Name/STT4870.git (fetch)
 origin  https://github.com/Your-User-Name/STT4870.git (push)
@@ -249,12 +255,16 @@ To keep track of this repo, you need to add another remote named \texttt{upstrea
 This can be done by typing
 
 <<label = UPSTREAM, eval = FALSE, engine = "bash", GIT = TRUE>>=
+
+
 git remote add upstream https://github.com/alanarnholt/STT4870.git
 @
 
 Typing the first line of code in \gref{RepoCheck} after entering the code in \gref{UPSTREAM} should return something similar to \gref{OriginUpstream}.  That is, the second and third lines should have your user name where the url has \texttt{Your-User-Name}.
 
 <<label = OriginUpstream, engine = "bash", eval = FALSE, GIT = TRUE>>=
+
+
 git remote -v
 origin  https://github.com/Your-User-Name/STT4870.git (fetch)
 origin	https://github.com/Your-User-Name/STT4870.git (push)
@@ -364,9 +374,11 @@ In the next window that appears, see \vref{CloneGRW}, enter the URL for the repo
 \clearpage
 
 To check the current status of your repository type \texttt{git status} as shown in Git Example 
-\ref{STATUS}.
+\gref{STATUS}.
 
 <<label = STATUS, engine = "bash", GIT = TRUE>>=
+
+
 git status
 @
 The \texttt{git status} command shows us what files are not staged for a commit.  

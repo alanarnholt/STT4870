@@ -53,7 +53,7 @@ theme_set(previous_theme) # Restore original theme
 The graphs shown so far have fonts that do not match the font of the thesis.  To create graphs that have the same font as the thesis, use the \texttt{dev = "tikz"} option in the R code chunk.  \fref{graph2} uses the \texttt{dev = "tikz"} option so that the fonts in the graph are in agreement with the document fonts.
 
 \begin{figure}[!ht]
-<<G2, comment = NA, out.width=".65\\linewidth",fig.align='center', echo = FALSE, dev = "tikz",fig.height=5,fig.width=5>>=
+<<G2, comment = NA, out.width=".65\\linewidth", fig.align='center', echo = FALSE, dev = "tikz", fig.height=5, fig.width=5>>=
 set.seed(13)  # set seed
 hist(rnorm(1000), col = "green", breaks = "Scott", freq = FALSE, main = "", xlab = "This font matches the document font!", ylab = "This font matches the document font!")
 title(main = paste("Math with good fonts:","$\\int_{-\\infty}^{\\infty}f(x)\\,dx = 1$"))
@@ -76,3 +76,5 @@ X2
 pvalue <- pchisq(X2, 9, lower = FALSE)
 pvalue
 @
+
+Inline \texttt{R} expressions are created with \verb|\Sexpr{}|.  For example, the \textit{p}-value from \texttt{R} Code \vref{SomeCode} is \Sexpr{pvalue}.
